@@ -1,3 +1,8 @@
 'use strict';
 
-['I am JavaScript', "Hello world"].forEach(alert);
+let first;
+first='I am JavaScript';
+let second;
+second='Hello world';
+
+[first, second].forEach(alert);
