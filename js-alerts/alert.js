@@ -1,8 +1,6 @@
 'use strict';
 
-let first;
-first='I am JavaScript';
-let second;
-second='Hello world';
+let first='I am JavaScript'
+    , second='Hello world';
 
 [first, second].forEach(alert);
