@@ -18,9 +18,22 @@
     // } else {
     // message = '';
     // }
-    let age = prompt('Your age', '');
-    let message = (age>=14 &&  age<=90) ? 'Reussite' : 'wrong age';
-    alert(message)
+    let login = prompt("Who's there?", '');
+    let password;
+    if (login=='Отмена') {
+        alert("Отменено");
+    } else if (login=='Админ') {
+        password = prompt('Your password:', '');
+        if (password=='Я главный') {
+            alert('Здравствуйте!');
+        } else if (password=='Отмена') {
+            alert("Отменено");
+        } else {
+            alert("Неверный пароль");
+        }
+    } else {
+        alert("Я вас не знаю")
+    }
     
         
     </script>
