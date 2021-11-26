@@ -8,19 +8,10 @@
 </head>
 <body>
     <script>
-        let accessAllowed;
         let age = prompt('How old are you?', '');
-
-        if (age >= 18) {
-            alert(accessAllowed = true);
-
-        } else if (age < 18) {
-            alert(accessAllowed = false);
-        } else {
-            alert('Incorrect input!\nTry again later')
-        }
+        let accessAllowed = (age >= 18) ? true : false;
+        alert(accessAllowed)
         
-
     </script>
 </body>
 </html>
