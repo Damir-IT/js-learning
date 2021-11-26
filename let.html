@@ -8,9 +8,13 @@
 </head>
 <body>
     <script>
-        let age = prompt('How old are you?', '');
-        let accessAllowed = (age >= 18) ? true : false;
-        alert(accessAllowed)
+     
+        let answer = prompt('What is the official name of JS?', '');
+        if (answer == 'ECMAScript') {
+            alert('You got it right, smart one!');
+        } else {
+            alert("I'm afraid you're wrong :( It's ECMAScript!")
+        }
         
     </script>
 </body>
