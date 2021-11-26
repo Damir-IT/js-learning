@@ -18,10 +18,8 @@
     // } else {
     // message = '';
     // }
-    let login = prompt('Login', '');
-    let message = (login == 'Сотрудник') ? 'Привет' : 
-    (login == 'Директор') ? 'Здравствуйте' : 
-    (login == '') ?  'Нет логина' : '';
+    let age = prompt('Your age', '');
+    let message = (age>=14 &&  age<=90) ? 'Reussite' : 'wrong age';
     alert(message)
     
         
