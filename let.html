@@ -8,34 +8,21 @@
 </head>
 <body>
     <script>
-    // let message;
-    // if (login == 'Сотрудник') {
-    // message = 'Привет';
-    // } else if (login == 'Директор') {
-    // message = 'Здравствуйте';
-    // } else if (login == '') {
-    // message = 'Нет логина';
-    // } else {
-    // message = '';
-    // }
-    let login = prompt("Who's there?", '');
-    let password;
-    if (login=='Отмена') {
-        alert("Отменено");
-    } else if (login=='Админ') {
-        password = prompt('Your password:', '');
-        if (password=='Я главный') {
-            alert('Здравствуйте!');
-        } else if (password=='Отмена') {
-            alert("Отменено");
-        } else {
-            alert("Неверный пароль");
+        const number = +prompt('Введите число между 0 и 3', '');
+        switch (number) {
+            case 0:
+                alert('Вы ввели число 0');
+                break;
+
+            case 1: 
+                alert('Вы ввели число 1');
+                break;
+
+            case 2:
+            case 3:
+                alert('Вы ввели число 2, а может и 3');
+                break;
         }
-    } else {
-        alert("Я вас не знаю")
-    }
-    
-        
     </script>
 </body>
 </html>
