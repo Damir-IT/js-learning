@@ -8,16 +8,25 @@
 </head>
 <body>
     <script>
-        function checkAge (age) {
-            return age>18 || confirm('Родители разрешили?');
-        }
-        checkAge(+prompt('age', ''));
+        // function checkAge (age) {
+        //     return age>18 || confirm('Родители разрешили?');
+        // }
+        // checkAge(+prompt('age', ''));
 
         // or in one line 
         // alert(+prompt('Your age:', '(18+)') > 18 ? true : confirm('Родители разрешили?'));
+
+
+        function min(a, b) {
+            return a<b ? a : b;
+        }
+        alert(
+            min(
+                +prompt('a', ''), 
+                +prompt('b', '')
+                )
+            );
         
     </script>
 </body>
 </html>
-
-]
